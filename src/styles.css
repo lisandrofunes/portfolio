@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    /* --color1: #e0e1dd;
+    --color2: #778da9;
+    --color3: #415a77;
+    --color4: #1b263b;
+    --color5: #0d1b2a; */
+
+    /* --color1: #eaac8b;
+    --color2: #e56b6f;
+    --color3: #b56576;
+    --color4: #6d597a;
+    --color5: #355070; */
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.light-theme{
+    /* --background: #e0e0e0;
+    --text: #1f1f1f;
+    --shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff; */
+
+
+    --color5: #eaac8b;
+    --color2: #e56b6f;
+    --color3: #b56576;
+    --color4: #6d597a;
+    --color1: #355070;
+
+
+
+    --navbar: rgba(229, 233, 242, 0.4);
+    --alphaBackground: rgba(229, 233, 242, 0.5);
+    --blend-mode: lighten;
+    --background: #e0e0e0;
+    --card: #FFFFFF;
+    --text: #333333;
+    --textI: #F2F2F2;
+    --main: #007BFF;
+    --shadowIn: #ffffff;
+    --shadowOut: #bebebe;
+    --shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+
+    
+/* Paleta de colores para modo claro: */
+
+/* Modo Claro */
+--Color-de-fondo: #F9F9F9; /* Un tono blanco cálido para un fondo limpio y luminoso */
+--Color-de-texto-principal: #333333; /* Un gris oscuro para una buena legibilidad */
+--Resaltado-1: #007BFF; /* Un azul vibrante para resaltar elementos importantes */
+--Resaltado-2: #00C851; /* Un verde brillante para acciones positivas */
+--Resaltado-3: #FF8800; /* Un naranja animado para captar la atención */
+--Color-secundario-1: #6C757D; /* Un gris más claro para detalles adicionales */
+--Color-secundario-2: #EFEFEF; /* Un gris claro para separadores o fondos sutiles */
+
+/* Modo Claro */
+--Color-de-fondo: #FFFFFF; /* Un tono blanco para un fondo limpio y luminoso */
+--Color-de-texto-principal: #264653; /* Un tono azul oscuro para un buen contraste con el fondo */
+--Resaltado-1: #2a9d8f; /* Un verde azulado para resaltar elementos importantes */
+--Resaltado-2: #e9c46a; /* Un tono amarillo dorado para acciones positivas */
+--Resaltado-3: #f4a261; /* Un tono naranja para destacar elementos adicionales */
+--Color-secundario-1: #e76f51; /* Un tono naranja quemado para detalles adicionales */
+
+}
+
+
+.dark-theme{
+
+    --color1: #eaac8b;
+    --color4: #e56b6f;
+    --color3: #b56576;
+    --color2: #6d597a;
+    --color5: #355070;
+
+    /* --background: #2A2C39;
+    --text: #e0e0e0;
+    --shadow:  20px 20px 60px #242530,
+                 -20px -20px 60px #303342; */
+    --navbar: rgba(51, 51, 51, 0.4);
+    --background: #262626;
+    --alphaBackground: rgba(38, 38, 38, 0.5);
+    --blend-mode: darken;
+    --card: #252525;
+    --text: #F2F2F2;
+    --textI: #333333;
+    --main: #66B3FF;
+    --shadowIn: #303030;
+    --shadowOut: #181818;
+
+    /* Modo Oscuro */
+--Color-de-fondo: #121212; /* Un negro profundo para un fondo oscuro */
+--Color-de-texto-principal: #EFEFEF; /* Un blanco casi gris para contraste con el fondo */
+--Resaltado-1: #2196F3; /* Un azul intenso para destacar elementos importantes */
+--Resaltado-2: #4CAF50; /* Un verde vivo para acciones positivas */
+--Resaltado-3: #FF9800; /* Un naranja llamativo para captar la atención */
+--Color-secundario-1: #9E9E9E; /* Un gris medio para detalles adicionales */
+--Color-secundario-2: #333333; /* Un gris oscuro para separadores o fondos sutiles */
+
+/* Modo Oscuro */
+--Color-de-fondo: #121212; /* Un negro profundo para un fondo oscuro */
+--Color-de-texto-principal: #FFFFFF; /* Un blanco para un buen contraste con el fondo */
+--Resaltado-1: #34D399; /* Un verde más claro para resaltar elementos importantes */
+--Resaltado-2: #FBBF24; /* Un tono amarillo brillante para acciones positivas */
+--Resaltado-3: #F59E0B; /* Un tono dorado para destacar elementos adicionales */
+--Color-secundario-1: #E36414; /* Un naranja intenso para detalles adicionales */
+
+/* Modo Oscuro */
+--Color-de-fondo: #1F1F1F; /* Un negro profundo para un fondo oscuro */
+--Color-de-texto-principal: #EFEFEF; /* Un blanco para un buen contraste con el fondo */
+--Resaltado-1: #33C9B0; /* Un verde azulado más claro para resaltar elementos importantes */
+--Resaltado-2: #F48A1E; /* Un tono naranja brillante para acciones positivas */
+--Resaltado-3: #E25628; /* Un tono naranja intenso para destacar elementos adicionales */
+--Color-secundario-1: #DFB659; /* Un tono amarillo suave para detalles adicionales */
+      
+}
+
+/* 
+.title{
+    font-family: 'Righteous', cursive;
+} */

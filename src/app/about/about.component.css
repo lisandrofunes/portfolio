@@ -1,0 +1,15 @@
+.container-bg{
+    /* background: var(--back-about); */
+    padding: 4em 0;
+}
+
+.container_about p{
+    color: var(--text);
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+.title{
+    color: var(--text);
+}   
