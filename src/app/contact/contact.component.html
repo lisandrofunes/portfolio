@@ -1,1 +1,61 @@
-<p>contact works!</p>
+<div class="container-bg">
+  <div class="container">
+    <div class="contact_body">
+
+      <h2 class="title"><b>Contacto</b></h2>
+
+      <div class="description_contact">
+        <p>¡Hablemos! Si tienes alguna pregunta, no dudes en comunicarte conmigo.
+          Utiliza el formulario a continuación o a traves de mis redes sociales.
+          Te responderé tan pronto como pueda.</p>
+      </div>
+
+      <form (ngSubmit)="sendEmail()" action="https://formsubmit.co/lisandrofunes05@gmail.com" method="POST"
+        class="form">
+
+        <div class="user-box">
+          <input type="text" name="_name" autocomplete="off" required>
+          <label>Nombre</label>
+        </div>
+
+        <div class="user-box">
+          <input type="text" name="_email" autocomplete="off" required>
+          <label>email</label>
+        </div>
+
+        <div class="user-box">
+          <input type="tel" name="_phone" autocomplete="off" required>
+          <label>Teléfono</label>
+        </div>
+
+        <div class="user-box">
+          <textarea name="message" rows="4" required style="resize: none;"></textarea>
+
+          <label>Mensaje</label>
+        </div>
+
+        <button type="submit" class="send-btn" (click)="sendEmail()">Enviar</button>
+
+        <input type="hidden" name="_next" value="http://localhost:4200/">
+        <input type="hidden" name="_captcha" value="false">
+
+      </form>
+
+      <div class="social_networks">
+        <a class="skill-card linkedin_card" href="https://www.linkedin.com/in/lisandrofunes/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin d-flex"></i>
+          <p class="mb-0"><b>LinkedIn</b></p>
+        </a>
+        <a class="skill-card instagram_card" href="https://www.instagram.com/lisandro.funes/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram d-flex"></i>
+          <p class="mb-0"><b>Instagram</b></p>
+        </a>
+        <a class="skill-card whatsapp_card" href="https://api.whatsapp.com/send?phone=5493537302968" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp d-flex"></i>
+          <p class="mb-0"><b>WhatsApp</b></p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

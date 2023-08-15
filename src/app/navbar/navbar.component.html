@@ -3,7 +3,7 @@
     <div class="container">
 
         <div class="col-2">
-            <a class="navbar-brand title" href="/portafolio#">Lisandro Funes</a>
+            <a class="navbar-brand title" routerLink="home"><b>Lisandro</b></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -13,60 +13,33 @@
 
         <div class="collapse navbar-collapse col-10" id="navbarNavAltMarkup">
 
-
             <ul class="navbar-nav col-10 d-flex justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/portafolio#">Inicio</a>
+                    <a class="nav-link" routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portafolio#about">Sobre mí</a>
+                    <a class="nav-link" routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portafolio#skills">Habilidades</a>
+                    <a class="nav-link" routerLink="skills" routerLinkActive="active" ariaCurrentWhenActive="page">Aptitudes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portafolio#portfolio">Portafolio</a>
+                    <a class="nav-link" routerLink="portfolio" routerLinkActive="active" ariaCurrentWhenActive="page">Portafolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portafolio#contact">Contacto</a>
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contacto</a>
                 </li>
             </ul>
 
 
 
             <ul class="navbar-nav col-2 d-flex justify-content-end">
-                <!-- Switch theme -->
-                <!-- <li class="nav-item">
-                            <a class="nav-link">
-                                <label class="switch toggle">
-                                    <input id="checktheme" type="checkbox">
-                                    <span class="slider" (click)="switchTheme()"></span>
-                                </label>
-                            </a>
-                        </li> -->
-                <!-- <div class="switch-container" >
-                    <input type="checkbox" class="checkbox" id="checkbox">
-                    <label class="switch" for="checkbox" (click)="switchTheme()">
-                        <span class="slider"></span>
-                    </label>
-                </div> -->
-
                 <label class="switch">
                     <input id="checktheme" type="checkbox">
                     <span class="slider" (click)="switchTheme()"></span>
                 </label>
-
-
-
             </ul>
-
-
-
-
-
         </div>
-
-
 
     </div>
 </nav>

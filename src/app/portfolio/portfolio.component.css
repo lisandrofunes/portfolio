@@ -1,0 +1,154 @@
+.container-bg {
+    background: var(--background3);
+    background: linear-gradient(0deg, var(--background3) 50%, var(--background) 100%);
+    background-position: top;
+    padding: 4em 0 1em;
+    transition: all .5s;
+}
+
+.title {
+    color: var(--color0);
+    transition: all .5s;
+}
+
+owl-item {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+::ng-deep .owl-item {
+    text-align: center;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+::ng-deep .owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+::ng-deep .owl-prev,
+::ng-deep .owl-next {
+    color: var(--color0) !important;
+    font-size: 2rem !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: all .5s;
+}
+
+::ng-deep .owl-prev {
+    position: absolute;
+    left: -20px;
+}
+
+::ng-deep .owl-next {
+    position: absolute;
+    right: -20px;
+}
+
+::ng-deep .owl-dot.active span {
+    background: var(--color0) !important;
+
+}
+
+.portfolio {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--card2);
+    border-radius: 20px;
+    color: var(--text);
+    width: 300px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.portfolio_img {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    user-select: none;
+    transition: all .3s cubic-bezier(.6, .4, 0, 1);
+}
+
+.portfolio_body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.portfolio h4 {
+    margin: 0;
+}
+
+.description {
+    height: 100px;
+}
+
+.portfolio_btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.portfolio_btns a {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 20px;
+    background-color: var(--btn);
+    color: var(--textW);
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.container_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 1rem;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    user-select: none;
+    transition: all .3s cubic-bezier(.6, .4, 0, 1);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 1.5rem;
+    gap: .5rem;
+}
+
+.portfolio_img:hover .container_skills {
+    top: 0;
+    opacity: 1;
+    transition: all .3s cubic-bezier(.6, .4, 0, 1);
+    color: var(--textW);
+}
+
+
+@media screen and (max-width: 991px) {
+    ::ng-deep .owl-nav {
+        display: none;
+    }
+}

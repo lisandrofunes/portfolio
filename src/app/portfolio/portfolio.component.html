@@ -1,1 +1,30 @@
-<p>portfolio works!</p>
+<div  id="contact" class="container-bg">
+    <div class="container">
+        <h2 class="title"><b>Portafolio</b></h2>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let portfolio of portfolios" [id]="portfolio.name">
+                <div class="portfolio">
+                    <div class="portfolio_img">
+                        <img class="image" [src]="portfolio.img" alt="" srcset="">
+                        <div class="container_skills">
+                            <span><b>Tecnologías utilizadas</b></span>
+                            <div class="skills">
+                                <i *ngFor="let skill of portfolio.skills" class="{{skill.id}}"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_body">
+                        <h4><b>{{portfolio.name}}</b></h4>
+                        <div class="description">
+                            <span>{{portfolio.description}}</span>
+                        </div>
+                        <div class="portfolio_btns">
+                            <a [href]="portfolio.url" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-box-arrow-up-right"></i> Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

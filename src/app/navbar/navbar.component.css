@@ -1,17 +1,20 @@
 .navbar{
-  background-color: var(--navbar);
   color: var(--text) !important;
+  transition: 1s;
 }
 
-
+.navbar-scrolled {
+  background-color: var(--navbar);
+  transition: 1s;
+}
 
 a{
   color: var(--text);
 }
 
 .active{
-  color: var(--color1) !important;
-  box-shadow: 0px 3px var(--color1);
+  color: var(--color0) !important;
+  box-shadow: 0px 3px var(--color0);
 }
 
  /* The switch - the box around the slider */
@@ -42,8 +45,8 @@ a{
   transition: .5s;
   border-radius: 30px;
 
-  /* box-shadow: inset 3px 3px 6px var(--shadowOut),
-            inset -3px -3px 6px var(--shadowIn); */
+  box-shadow: inset 3px 3px 6px var(--shadowOut),
+            inset -3px -3px 6px var(--shadowIn);
 }
 
 .slider:before {
@@ -67,3 +70,10 @@ input:checked + .slider:before {
   transform: translateX(100%);
   box-shadow: inset 15px -4px 0px 15px #fff000;
 }
+
+@media screen and (max-width: 991px){
+  .navbar{
+    background-color: var(--navbar);
+  }
+}
+

@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, Renderer2 } from '@angular/core';
+import { Component, OnInit, Inject, Renderer2, HostListener, ElementRef } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 // import { TokenService } from '../Service/token.service';
 import { Router } from '@angular/router';
@@ -17,18 +17,12 @@ export class NavbarComponent implements OnInit{
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private renderer: Renderer2,
-    // private tokenService: TokenService,
+    private elementRef: ElementRef,
     private router: Router
   ) { }
 
   ngOnInit(): void {
     var element = <HTMLInputElement> document.getElementById("checktheme");
-
-    // if(this.tokenService.getToken()){
-    //   this.isLogged = true;
-    // } else {
-    //   this.isLogged = false;
-    // }
 
     if (localStorage.getItem('theme') === 'dark-theme'){
       element.checked = false;
@@ -43,13 +37,21 @@ export class NavbarComponent implements OnInit{
   }
 
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const navbar = this.elementRef.nativeElement.querySelector('.navbar');
+    if (window.pageYOffset > navbar.offsetTop) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  }
+
+
   switchTheme() {
     this.document.body.classList.replace(
       this.theme,
       localStorage.getItem('theme') === 'dark-theme' ? (this.theme = 'light-theme'): (this.theme = 'dark-theme')
-      // this.theme === 'light-theme'
-      //   ? (this.theme = 'dark-theme')
-      //   : (this.theme = 'light-theme')
     );
     this.setTheme();
   }
@@ -62,6 +64,10 @@ export class NavbarComponent implements OnInit{
     localStorage.setItem('theme', this.theme)
     console.log("theme: " + this.theme);
     
+  }
+
+  isRouteActive(route: string): boolean {
+    return this.router.isActive(route, true);
   }
 
 

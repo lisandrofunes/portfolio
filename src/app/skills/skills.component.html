@@ -1,1 +1,11 @@
-<p>skills works!</p>
+<div id="skills" class="container-bg">
+    <div class="container">
+        <h2 class="title"><b>Aptitudes</b></h2>
+        <div class="container_skills">
+            <div *ngFor="let skill of lista" class="skill-card">
+                <i class="{{skill.img}}"></i>
+                <p class="mb-0"><b>{{skill.name}}</b></p>
+            </div>
+        </div>
+    </div>
+</div>
