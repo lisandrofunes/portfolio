@@ -1,20 +1,14 @@
-:root{
-    --link: #2a9d8f;
-}
-
 *{
     font-family: 'Poppins', sans-serif;
-    
 }
+
 html, body {
     scroll-behavior: smooth; 
 }
 
 .light-theme{
     --color0: #e76f51;
-    --color1: #e9c46a;
-    --color2: #f4a261;
-    --color3: #264653;
+    --color1: #f4a261;
     --btn: #2a9d8f;
     --navbar: #dadada;
     --background: #E6E6E6;
@@ -34,10 +28,8 @@ html, body {
 
 
 .dark-theme{
-    --color0: #e9c46a;
-    --color1: #e76f51;
-    --color2: #264653;    
-    --color3: #f4a261;
+    --color0: #e9c46a; 
+    --color1: #f4a261;
     --btn: #508e51;
     --navbar: #141414;
     --background: #191919;

@@ -3,7 +3,7 @@
     <div class="container">
 
         <div class="col-2">
-            <a class="navbar-brand title" routerLink="home"><b>Lisandro</b></a>
+            <a class="navbar-brand" routerLink="home"><i>&lt;LF&gt;</i></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -15,19 +15,19 @@
 
             <ul class="navbar-nav col-10 d-flex justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page">Inicio</a>
+                    <a #navLink class="nav-link active" href="#home" (click)="switchSection(0)" ariaCurrentWhenActive="page">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">Sobre mí</a>
+                    <a #navLink class="nav-link" href="#about" (click)="switchSection(1)" ariaCurrentWhenActive="page">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="skills" routerLinkActive="active" ariaCurrentWhenActive="page">Aptitudes</a>
+                    <a #navLink class="nav-link" href="#skills" (click)="switchSection(2)" ariaCurrentWhenActive="page">Aptitudes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="portfolio" routerLinkActive="active" ariaCurrentWhenActive="page">Portafolio</a>
+                    <a #navLink class="nav-link" href="#portfolio" (click)="switchSection(3)" ariaCurrentWhenActive="page">Portafolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contacto</a>
+                    <a #navLink class="nav-link" href="#contact" (click)="switchSection(4)" ariaCurrentWhenActive="page">Contacto</a>
                 </li>
             </ul>
 

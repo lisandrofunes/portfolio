@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, Renderer2, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, Inject, Renderer2, HostListener, ElementRef, ViewChildren, QueryList } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 // import { TokenService } from '../Service/token.service';
 import { Router } from '@angular/router';
@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit{
-  preferedColorScheme:any = window.matchMedia('(prefers-color-scheme: light-theme').matches ? 'light-theme' : 'dark-theme';
-  theme:any = localStorage.getItem('theme') || this.preferedColorScheme;
+export class NavbarComponent implements OnInit {
+  preferedColorScheme: any = window.matchMedia('(prefers-color-scheme: light-theme').matches ? 'light-theme' : 'dark-theme';
+  theme: any = localStorage.getItem('theme') || this.preferedColorScheme;
 
   isLogged = false;
 
@@ -22,20 +22,29 @@ export class NavbarComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    var element = <HTMLInputElement> document.getElementById("checktheme");
+    var element = <HTMLInputElement>document.getElementById("checktheme");
 
-    if (localStorage.getItem('theme') === 'dark-theme'){
+    if (localStorage.getItem('theme') === 'dark-theme') {
       element.checked = false;
       console.log("check")
-    } 
-    else{
+    }
+    else {
       element.checked = true;
       console.log("uncheck")
     }
     this.initializeTheme();
-    
+
   }
 
+  @ViewChildren('navLink') navLinks!: QueryList<ElementRef>;
+  switchSection(id: number){
+    this.navLinks.forEach(navLink => {
+      const link = navLink.nativeElement;
+      link.classList.remove('active')
+    })
+
+    this.navLinks.toArray()[id].nativeElement.classList.add('active');
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -48,27 +57,27 @@ export class NavbarComponent implements OnInit{
   }
 
 
-  switchTheme() {
-    this.document.body.classList.replace(
-      this.theme,
-      localStorage.getItem('theme') === 'dark-theme' ? (this.theme = 'light-theme'): (this.theme = 'dark-theme')
-    );
-    this.setTheme();
-  }
+switchTheme() {
+  this.document.body.classList.replace(
+    this.theme,
+    localStorage.getItem('theme') === 'dark-theme' ? (this.theme = 'light-theme') : (this.theme = 'dark-theme')
+  );
+  this.setTheme();
+}
 
-  initializeTheme = (): void =>
-    this.renderer.addClass(this.document.body, this.theme);
-    
+initializeTheme = (): void =>
+  this.renderer.addClass(this.document.body, this.theme);
 
-  setTheme(){
-    localStorage.setItem('theme', this.theme)
-    console.log("theme: " + this.theme);
-    
-  }
 
-  isRouteActive(route: string): boolean {
-    return this.router.isActive(route, true);
-  }
+setTheme(){
+  localStorage.setItem('theme', this.theme)
+  console.log("theme: " + this.theme);
+
+}
+
+isRouteActive(route: string): boolean {
+  return this.router.isActive(route, true);
+}
 
 
   // toPortfolio(){

@@ -8,8 +8,18 @@
   transition: 1s;
 }
 
-a{
+.navbar-brand{
+  color: var(--color0);
+}
+
+.nav-link {
   color: var(--text);
+  transition: .3s;
+}
+
+.nav-link:hover{
+  color: var(--color1);
+  transition: .3s;
 }
 
 .active{
@@ -41,12 +51,12 @@ a{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--navbar);
+  background-color: var(--card);
   transition: .5s;
   border-radius: 30px;
 
-  box-shadow: inset 3px 3px 6px var(--shadowOut),
-            inset -3px -3px 6px var(--shadowIn);
+  /*box-shadow: inset 3px 3px 6px #a1a1a1,
+            inset -3px -3px 6px #a1a1a1;*/
 }
 
 .slider:before {
@@ -58,12 +68,12 @@ a{
   left: 10%;
   bottom: 15%;
   box-shadow: inset 8px -4px 0px 0px #A4D8FF;
-  background: var(--navbar);
+  background: var(--card2);
   transition: .5s;
 }
 
 input:checked + .slider {
-  background-color: var(--navbar);
+  background-color: var(--card2);
 }
 
 input:checked + .slider:before {
