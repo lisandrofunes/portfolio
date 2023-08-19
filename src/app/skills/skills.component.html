@@ -2,10 +2,10 @@
     <div class="container">
         <h2 class="title"><b>Aptitudes</b></h2>
         <div class="container_skills">
-            <div *ngFor="let skill of lista" class="skill-card">
+            <a *ngFor="let skill of lista" class="skill-card" href="{{skill.link}}" target="_blank" rel="noopener noreferrer">
                 <i class="{{skill.img}}"></i>
                 <p class="mb-0"><b>{{skill.name}}</b></p>
-            </div>
+            </a>
         </div>
     </div>
 </div>

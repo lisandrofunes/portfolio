@@ -1,19 +1,6 @@
 .container-bg {
-    background: var(--background3);
     background: linear-gradient(0deg, var(--background3) 50%, var(--background) 100%);
     background-position: top;
-    padding: 4em 0 1em;
-    transition: all .5s;
-}
-
-.title {
-    color: var(--color0);
-    transition: all .5s;
-}
-
-owl-item {
-    display: flex !important;
-    justify-content: center !important;
 }
 
 ::ng-deep .owl-item {
@@ -28,30 +15,21 @@ owl-item {
     width: 100%;
 }
 
-::ng-deep .owl-prev,
-::ng-deep .owl-next {
+::ng-deep .owl-prev, ::ng-deep .owl-next {
+    position: absolute;
     color: var(--color0) !important;
     font-size: 2rem !important;
     background-color: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
-    transition: all .5s;
+    transition: all .3s;
 }
 
-::ng-deep .owl-prev {
-    position: absolute;
-    left: -20px;
-}
+::ng-deep .owl-prev {left: -20px;}
 
-::ng-deep .owl-next {
-    position: absolute;
-    right: -20px;
-}
+::ng-deep .owl-next {right: -20px;}
 
-::ng-deep .owl-dot.active span {
-    background: var(--color0) !important;
-
-}
+::ng-deep .owl-dot.active span {background: var(--color0) !important;}
 
 .portfolio {
     display: flex;
@@ -63,7 +41,7 @@ owl-item {
     color: var(--text);
     width: 300px;
     overflow: hidden;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .portfolio_img {
@@ -88,13 +66,9 @@ owl-item {
     padding: 1rem;
 }
 
-.portfolio h4 {
-    margin: 0;
-}
+.portfolio h4 {margin: 0;}
 
-.description {
-    height: 100px;
-}
+.description {height: 100px;}
 
 .portfolio_btns {
     display: flex;
@@ -110,7 +84,7 @@ owl-item {
     color: var(--textW);
     text-align: center;
     text-decoration: none;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .container_skills {
@@ -148,7 +122,5 @@ owl-item {
 
 
 @media screen and (max-width: 991px) {
-    ::ng-deep .owl-nav {
-        display: none;
-    }
+    ::ng-deep .owl-nav {display: none;}
 }

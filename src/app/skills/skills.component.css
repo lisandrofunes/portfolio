@@ -1,17 +1,10 @@
 .container-bg{
     background: var(--background);
-    padding: 4em 0 1em;
-    transition: all 1s;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-}
-
-.title{
-    color: var(--color0);
-    transition: all 1s;
 }
 
 .container_skills {
@@ -20,25 +13,6 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem; */
-}
-
-.skill-card {
-    
-    display: flex;
-    align-items: center;
-    /* width: 200px; */
-    border-radius: 20px;
-    background-color: var(--card);
-    color: var(--text);
-    padding: 1rem;
-    gap: 1rem;
-    transition: all .3s cubic-bezier(.6, .4, 0, 1);
-    user-select: none;
 }
 
 .skill-card i{
@@ -70,4 +44,3 @@
     }
 }
 
-/* @media screen and (min-width: 481px) and (max-width: 1023px)  */

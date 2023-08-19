@@ -37,13 +37,7 @@ export class PortfolioComponent {
 
   // @ViewChildren('portfolio') portfolios!: QueryList<ElementRef>;
 
-  portfolios = [{name: "Calculadora", 
-                 img:"../../assets/calculadora.png", 
-                 description:"Uno de mis primeros proyectos aplicando lo aprendido en una calculadora para operaciones básicas.", 
-                 url:"https://lisandrofunes.github.io/calculadora", 
-                 skills:[{id:"devicon-html5-plain"},{id:"devicon-css3-plain"},{id:"devicon-bootstrap-plain"},{id:"devicon-javascript-plain"}]
-                },
-                {name: "Pomodoro", 
+  portfolios = [{name: "Pomodoro", 
                  img:"../../assets/pomodoro.png", 
                  description:'Consiste en aplicar la técnica "Pomodoro" para mejorar la administración del tiempo dedicado a una actividad.', 
                  url:"https://lisandrofunes.github.io/pomodoro", 

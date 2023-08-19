@@ -1,5 +1,4 @@
 .container-bg {
-    padding: 4rem 1rem;
     background: var(--backContact);
     background-size: cover;
     background-position: bottom;
@@ -10,11 +9,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
-
-.title {
-    color: var(--color0);
-    transition: all 1s;
 }
 
 .description_contact {
@@ -34,6 +28,7 @@
     padding: 1.5rem;
     border-radius: 40px;
     width: 500px;
+    transition: .3s;
 }
 
 .social_networks {
@@ -45,45 +40,23 @@
 }
 
 .skill-card {
-    display: flex;
-    align-items: center;
     position: relative;
-    border-radius: 20px;
-    background-color: var(--card);
-    color: var(--text);
-    padding: 1rem;
-    gap: 1rem;
-    transition: all .3s ease-in;
-    user-select: none;
     text-decoration: none;
 }
 
-
-.linkedin_card:hover {
-    background-color: #0e76a8;
-    color: #fff;
+.skill-card:hover{
+    color: #FFF;
     transition: all .3s ease-out;
 }
 
-.instagram_card:hover{
-    background-color: #C13584;
-    color: #fff;
-    transition: all .3s ease-out;
-}
-
-.whatsapp_card:hover{
-    background-color: #25D366;
-    color: #fff;
-    transition: all .3s ease-out;
-}
+.linkedin_card:hover {background-color: #0e76a8;}
+.instagram_card:hover {background-color: #C13584;}
+.whatsapp_card:hover {background-color: #25D366;}
 
 /* formulario */
-.user-box {
-    position: relative;
-}
+.user-box {position: relative;}
 
-.user-box input,
-textarea {
+.user-box input, textarea {
     width: 100%;
     padding: .5rem 1rem;
     font-size: 1rem;
@@ -91,11 +64,10 @@ textarea {
     border: none;
     background: var(--input);
     border-radius: 20px;
-    transition: .5s;
+    transition: .3s;
 }
 
-.user-box input:focus-visible,
-textarea:focus-visible {
+.user-box input:focus-visible, textarea:focus-visible {
     outline: none;
     box-shadow: inset 0px 0px 1px 3px var(--color0);
 }
@@ -111,10 +83,7 @@ textarea:focus-visible {
     transition: all .3s cubic-bezier(.6, .4, 0, 1);
 }
 
-.user-box input:focus~label,
-.user-box input:valid~label,
-.user-box textarea:focus~label,
-.user-box textarea:valid~label {
+.user-box input:focus~label, .user-box input:valid~label, .user-box textarea:focus~label, .user-box textarea:valid~label {
     top: -10px;
     left: 0px;
     width: 70px;
@@ -125,10 +94,7 @@ textarea:focus-visible {
     border-radius: 10px 10px 10px 0;
 }
 
-.user-box input:focus,
-.user-box input:valid,
-.user-box textarea:focus,
-.user-box textarea:valid {
+.user-box input:focus, .user-box input:valid, .user-box textarea:focus, .user-box textarea:valid {
     border-radius: 0 20px 20px 20px;
 }
 
@@ -142,21 +108,13 @@ textarea:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
-    .description_contact{
-        width: 100%;
-    }
+    .description_contact{width: 100%;}
 
-    .form {
-        width: 100%;
-    }
+    .form {width: 100%;}
 
-    .skill-card p {
-        display: none;
-    }
+    .skill-card p {display: none;}
 
-    .social_networks{
-        width: auto;
-    }
+    .social_networks{width: auto;}
 
     .description_contact {
         font-size: 1rem;

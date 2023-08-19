@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  preferedColorScheme: any = window.matchMedia('(prefers-color-scheme: light-theme').matches ? 'light-theme' : 'dark-theme';
+  preferedColorScheme: any = window.matchMedia('(prefers-color-scheme: light-theme').matches ? 'dark-theme' : 'light-theme';
   theme: any = localStorage.getItem('theme') || this.preferedColorScheme;
 
   isLogged = false;

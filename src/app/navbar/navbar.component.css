@@ -1,11 +1,11 @@
 .navbar{
   color: var(--text) !important;
-  transition: 1s;
+  transition: all .3s;
 }
 
 .navbar-scrolled {
   background-color: var(--navbar);
-  transition: 1s;
+  transition: all .3s;
 }
 
 .navbar-brand{
@@ -14,12 +14,12 @@
 
 .nav-link {
   color: var(--text);
-  transition: .3s;
+  transition: all .3s;
 }
 
 .nav-link:hover{
   color: var(--color1);
-  transition: .3s;
+  transition: all .3s;
 }
 
 .active{
@@ -52,11 +52,8 @@
   right: 0;
   bottom: 0;
   background-color: var(--card);
-  transition: .5s;
+  transition: all .5s;
   border-radius: 30px;
-
-  /*box-shadow: inset 3px 3px 6px #a1a1a1,
-            inset -3px -3px 6px #a1a1a1;*/
 }
 
 .slider:before {
@@ -69,7 +66,7 @@
   bottom: 15%;
   box-shadow: inset 8px -4px 0px 0px #A4D8FF;
   background: var(--card2);
-  transition: .5s;
+  transition: all .5s;
 }
 
 input:checked + .slider {
@@ -81,6 +78,10 @@ input:checked + .slider:before {
   box-shadow: inset 15px -4px 0px 15px #fff000;
 }
 
+.menu_icon{
+  color: var(--text);
+  font-size: 1.4rem;
+}
 @media screen and (max-width: 991px){
   .navbar{
     background-color: var(--navbar);

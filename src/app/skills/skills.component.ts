@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
-  lista = [{name: "HTML", img:"devicon-html5-plain"},
-           {name: "CSS", img:"devicon-css3-plain"},
-           {name: "BootStrap", img:"devicon-bootstrap-plain"},
-           {name: "JavaScript", img:"devicon-javascript-plain"},
-           {name: "Angular", img:"devicon-angularjs-plain"},
-           {name: "TypeScrip", img:"devicon-typescript-plain"},
-           {name: "Java", img:"devicon-java-plain"},
-           {name: "Spring Boot", img:"devicon-spring-plain"},
-           {name: "MySql", img:"devicon-mysql-plain"},
-           {name: "GitHub", img:"devicon-github-plain"}]
+  lista = [{name: "HTML", img:"devicon-html5-plain", link:"https://developer.mozilla.org/es/docs/Web/HTML"},
+           {name: "CSS", img:"devicon-css3-plain", link:"https://developer.mozilla.org/es/docs/Web/CSS"},
+           {name: "BootStrap", img:"devicon-bootstrap-plain", link:"https://getbootstrap.com/"},
+           {name: "JavaScript", img:"devicon-javascript-plain", link:"https://developer.mozilla.org/es/docs/Web/JavaScript"},
+           {name: "Angular", img:"devicon-angularjs-plain", link:"https://angular.io/"},
+           {name: "TypeScrip", img:"devicon-typescript-plain", link:"https://www.typescriptlang.org/"},
+           {name: "Java", img:"devicon-java-plain", link:"https://www.oracle.com/java/"},
+           {name: "Spring Boot", img:"devicon-spring-plain", link:"https://spring.io/projects/spring-boot"},
+           {name: "MySql", img:"devicon-mysql-plain", link:"https://www.mysql.com/"},
+           {name: "GitHub", img:"devicon-github-plain", link:"https://github.com/"}]
 }

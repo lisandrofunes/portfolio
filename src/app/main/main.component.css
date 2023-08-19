@@ -1,9 +1,8 @@
 * {
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .container-bg {
-    background-color: var(--background);
     background-image: var(--backMain);
     background-size: cover;
     display: flex;
@@ -11,6 +10,7 @@
     justify-content: center;
     height: 100vh;
     position: relative;
+    padding: 0;
 }
 
 .container {
@@ -20,7 +20,7 @@
     flex-direction: row-reverse;
     align-items: flex-end;
     opacity: 0;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn .3s ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -106,12 +106,10 @@
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        /* transform: translateY(30px); */
     }
 
     100% {
         opacity: 1;
-        /* transform: translateY(-30px); */
     }
 }
 
@@ -134,7 +132,6 @@
         width: 50%;
         max-width: 200px;
     }
-
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {}

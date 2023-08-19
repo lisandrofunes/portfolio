@@ -46,3 +46,26 @@ html, body {
     --backMain: url(./assets/backMain_dark.svg);
     --backContact: url(./assets/backContact_dark.svg);
 }
+
+.container-bg{
+    padding: 4em 0 1em;
+    transition: all .3s;
+}
+
+.title {
+    color: var(--color0);
+    transition: all .3s;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--card);
+    color: var(--text);
+    padding: 1rem;
+    gap: 1rem;
+    transition: all .3s cubic-bezier(.6, .4, 0, 1);
+    user-select: none;
+    text-decoration: none;
+}
